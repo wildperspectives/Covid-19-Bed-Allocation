@@ -1,0 +1,89 @@
+<!-- form handling for adding patients -->
+        
+<form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+
+      <div class="form-group">
+        <label for="Aadhar" class="font">Aadhar Number</label>
+        <input type="text" name="aadhar" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="name" class="font">Name</label>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="name" value=""  autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label for="mobile" class="font">Mobile Number</label>
+        <input type="text" name="mobile" value="" autocomplete="off">
+      </div>
+
+        <div class="form-group">
+          <label for="vaccination" class="font">Vaccination Status</label>
+          <div class="radio inline">
+            <input type="radio" id="radio-4" name="vaccination" value="1st dose">
+            <label for="radio-4" class="radio-label">1st dose</label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-5" name="vaccination" value="2nd dose">
+            <label for="radio-5" class="radio-label">2nd dose</label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-6" name="vaccination" value="No">
+            <label for="radio-6" class="radio-label">Not Vaccinated</label>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="test" class="font">RT PCR Test Status</label>
+        <div class="radio inline"> 
+          <input type="radio" id="radio-7" name="test" value="Positive">
+          <label for="radio-7" class="radio-label">Positive</label>
+        </div>
+        <div class="radio inline">
+          <input type="radio" id="radio-8" name="test" value="Negative">
+          <label for="radio-8" class="radio-label">Negative</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="gender" id="gen" class="font">Gender</label>
+          <div class="radio inline">
+            <input type="radio" name="gender" id="radio-2" value="Male">
+            <label for="radio-2" class="radio-label">Male</label>
+          </div>
+          <div class="radio inline">
+            <input type="radio" id="radio-3" name="gender" value="Female">
+            <label for="radio-3" class="radio-label">Female</label>
+          </div>
+          </div>
+
+        <div class="form-group">
+          <label for="city" class="font">City</label>
+          <input type="text" name="city" value="" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="pincode" class="font">Pincode</label>
+          <input type="text" name="pincode" value="" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="hospital" class="font">Hospital</label>
+          <input type="text" name="hospital" list="hospitalName" autocomplete="off">
+          <datalist id="hospitalName">
+            <option value="Victoria Hospital">
+            <option value="M S Ramaiah Hospital">
+            <option value="Bowring Hospital">
+            <option value="Commando Hospital">
+            <option value="Manipal Hospital"> 
+            </datalist>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+  </form>
