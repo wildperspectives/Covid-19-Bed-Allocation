@@ -1,6 +1,6 @@
 Covid-19 Bed Allocation System - a project concerning the global pandemic, Covid-19.
 
-In this project, a view of the database is displayed which could be handled by the administrative authorities.
+In this fullstack project, a view of the database is displayed which could be handled by the administrative authorities.
 This view stores the records of all the patients who have been tested positive for Covid-19 and have been allocated beds respectively.
 
 On hosting the website, we are taken to the admin login page,where the admin can login with his/her admin id and password. Admin is securely authenticated.
